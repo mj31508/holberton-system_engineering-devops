@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+c=0
+until ((c >= 10))
+do
+	echo "Holberton School"
+	(( c++ ))
+done

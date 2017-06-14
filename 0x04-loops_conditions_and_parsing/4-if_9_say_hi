@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+c=0
+while ((c < 10))
+do
+    echo "Holberton School"
+    ((c++))
+    if ((c==9))
+       then echo "Hi"
+    fi
+done

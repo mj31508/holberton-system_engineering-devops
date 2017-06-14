@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+c=1
+while ((c <= 20))
+do
+	((c++))
+done

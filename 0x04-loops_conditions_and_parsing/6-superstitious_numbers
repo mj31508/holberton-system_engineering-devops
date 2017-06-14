@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+c=20
+while ((c<=20))
+do
+	case
