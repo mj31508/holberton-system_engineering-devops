@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+#Bash script to create a loop and if statement
 c=0
 while ((c < 10))
 do
