@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+
 Hour=0
 Minutes=1
 while ((Hour<=12))
