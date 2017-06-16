@@ -1,6 +1,18 @@
 #!/usr/bin/env bash
 #Bash script to create numbers
-c=20
+c=1
 while ((c<=20))
 do
-	case
+    echo $c
+
+    case $c in
+       [4])
+	   echo "bad luck from China";;
+
+	[9])
+	    echo "bad luck from Japan";;
+	[17])
+	    echo "bad luck from Italy";;
+    esac
+        (( c++ ))
+done
