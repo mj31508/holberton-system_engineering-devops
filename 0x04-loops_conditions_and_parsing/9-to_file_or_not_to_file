@@ -3,8 +3,8 @@
 FILE="holbertonschool"
 if [[ -e "$FILE" ]]; then
 	   echo "holbertonschool file exists"
-	if [[ -s "$FILE" ]]; then
-	   echo "holbertonschool file empty"
+	if [[ ! -s "$FILE" ]]; then
+	   echo "holbertonschool file is empty"
 	else
 	   echo "holbertonschool file is not empty"
 	fi
