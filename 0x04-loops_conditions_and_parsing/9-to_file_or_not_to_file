@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+#Bash script that gives information about a file
 FILE="holbertonschool"
 if [[ -e "$FILE" ]]; then
 	   echo "holbertonschool file exists"

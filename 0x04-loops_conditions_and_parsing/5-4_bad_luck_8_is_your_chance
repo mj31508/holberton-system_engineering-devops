@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#if elif else script"
+#if elif else script
 c=1
 while ((c <= 10))
 do

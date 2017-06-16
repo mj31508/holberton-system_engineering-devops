@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+#Bash script to create numbers
 c=20
 while ((c<=20))
 do
