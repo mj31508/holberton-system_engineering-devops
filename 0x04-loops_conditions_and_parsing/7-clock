@@ -2,7 +2,7 @@
 #Bash script that displays the time for 12 hours and 59 minutes
 Hour=0
 Minutes=1
-while ((Hour<12))
+while ((Hour<=12))
 do
     echo "Hour: $Hour"
     Minutes=1
