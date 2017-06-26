@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # A script to list all processes
 
-ps -aux
+ps -AuH
