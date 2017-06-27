@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# using the kill command to terminate a process
+
+echo $$ | kill -9 8655
