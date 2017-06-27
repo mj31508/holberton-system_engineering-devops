@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # using the kill command to terminate a process
-ps -ef | grep 4-to_infinity_and_beyond
+ps -ef | pgrep 4-to_infinity_and_beyond
 kill -9 6183
