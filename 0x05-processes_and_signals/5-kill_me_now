@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 # using the kill command to terminate a process
-pgrep 4-to_infinity_and_beyond | xargs kill -9
+PID=$(pgrep -f "4-to_infinty_and_beyond")
+kill "$PID"
