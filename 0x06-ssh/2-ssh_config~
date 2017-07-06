@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# configuring ssh file
+
+Host 66.70.187.58
+     ~/.ssh/holberton
+     ~/.ssh/config
