@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# ping a ip address
+
+for C in computers; do
+  ping -q -c 1 $C && ssh $C 'check something'
+done
