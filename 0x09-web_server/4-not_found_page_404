@@ -8,5 +8,5 @@ sudo service nginx restart
 echo "Ceci n'est pas une page" | sudo tee /usr/share/nginx/html/custom_404.html
 string="error_page 404 /custom_404.html;\n location = /custom_404.html {\n root /usr/share/nginx/html;\n internal;\n}"
 match="#error_page 404 /404.html;"
-sudo sed -i "s@$to_match@$new_string@" /etc/nginx/sites-available/default
+sudo sed -i "s@$match@$string@" /etc/nginx/sites-available/default
 sudo service nginx restart
