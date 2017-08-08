@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# debugging a file
+
+sed -i "s/listen [::]:90/listen 80/g" /etc/nginx/sites-available/default
