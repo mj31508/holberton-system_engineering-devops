@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-
-new_host=$(cat /etc/

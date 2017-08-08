@@ -1,4 +1,0 @@
-#!/usr/bin/env bash
-# displaying all IPv4 IP's on a machineq
-
-hostname -I

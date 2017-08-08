@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
 # displaying all IPv4 IP's on a machineq
 
-hostname -I
 ifconfig | grep "inet addr" | awk '{ print $2 }' | cut -f2 -d ":" | cat -e
