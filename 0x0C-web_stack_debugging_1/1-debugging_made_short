@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# debugging a file
+cd /etc/nginx/sites-enabled/
+ln -sf /etc/nginx/sites-available/default default
+service nginx stop
