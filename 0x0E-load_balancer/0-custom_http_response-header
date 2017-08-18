@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# configuring a web server to match another
+
+sudo apt-get update
+sudo apt-get -y install nginx
+sudo service nginx start
+add_header X-Served-By localhost
