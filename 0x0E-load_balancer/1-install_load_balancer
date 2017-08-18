@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+# installing a HAproxy server
+
+sudo echo deb http://archive.ubuntu.com/ubuntu trusty-backports main universe | \
+        sudo tee /etc/apt/sources.list.d/backports.list
+sudo apt-get update
+sudo apt-get install haproxy -t trusty-backports
+sudo sed -i '8i ENABLED=1' /etc/default/haproxy
+
+STR="listen nodes *:80\n\tbalance roundrobin\n\tserver 61-web-01 66.70.187.58:80 check\n\tserver 61-web-02 54.221.183.205:80 check"
+sudo sed -ie "\$a$STR" /etc/haproxy/haproxy.cfg
+
+sudo service haproxy start
