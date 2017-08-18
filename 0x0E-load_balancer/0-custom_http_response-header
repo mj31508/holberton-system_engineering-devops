@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # configuring a web server to match another
 
-shellcheck disable=SC2034
+shellcheck disable=SC2154
 sudo apt-get update
 sudo apt-get -y install nginx
 sudo service nginx start
