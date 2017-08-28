@@ -2,9 +2,8 @@
 # running nginx as user not root
 
 
-sudo pkill apache2
 sudo sed -i 's/listen 80 /listen 8080 /g' /etc/nginx/sites-available/default
+sudo pkill apache2
 sudo chmod -R 755 /etc/nginx/nginx.conf
-sudo service nginx stop
 sudo su nginx -c nginx
 sudo service nginx start
