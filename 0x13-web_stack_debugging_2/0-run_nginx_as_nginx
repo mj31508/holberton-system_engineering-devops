@@ -4,7 +4,7 @@
 
 sudo pkill apache2
 sudo sed -i "s/80/8080/" /etc/nginx/sites-available/default
-sudo chown -R nginx:nginx /etc/nginx
+sudo chown -R nginx /etc/nginx
 sudo chmod 755 /etc/nginx/nginx.conf
 sudo service nginx stop
 su nginx -c nginx
