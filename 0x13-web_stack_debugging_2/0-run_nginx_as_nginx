@@ -3,7 +3,7 @@
 
 
 sudo sed -i 's/listen 80 /listen 8080 /g' /etc/nginx/sites-available/default
-sudo pkill apache2
+sudo chown -R nginx /etc/nginx
 sudo chmod -R 755 /etc/nginx/nginx.conf
-sudo su nginx -c nginx
+sudo pkill apache2
 sudo service nginx start
