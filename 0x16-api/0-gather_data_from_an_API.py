@@ -22,9 +22,9 @@ if __name__ == "__main__":
     task_titles = []
     for tasks in task_dict:
         if int(tasks.get("userId")) == int(user_id):
-            total_tasks += 1
+            t_tasks += 1
             if tasks.get("completed") is True:
-                done_tasks += 1
+                d_tasks += 1
                 task_titles.append(tasks.get("title"))
 print("Employee {} is done with tasks({}/{})".format(name, d_tasks, t_tasks))
 
