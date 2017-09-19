@@ -1,13 +1,13 @@
 #!/usr/bin/python3
 """Python script for a restful api"""
-import sys
 import requests
+import sys
 
 if __name__ == "__main__":
 
     """tasks"""
 
-    name = ""
+    # name = ""
     user_id = sys.argv[1]
     url = "https://jsonplaceholder.typicode.com/users"
     req = requests.get(url)
