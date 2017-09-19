@@ -4,7 +4,9 @@ import sys
 import requests
 
 if __name__ == "__main__":
+
     """tasks"""
+
     name = ""
     user_id = sys.argv[1]
     url = "https://jsonplaceholder.typicode.com/users"
@@ -26,7 +28,8 @@ if __name__ == "__main__":
             if tasks.get("completed") is True:
                 d_tasks += 1
                 task_titles.append(tasks.get("title"))
-print("Employee {} is done with tasks({}/{}):".format(name, d_tasks, t_tasks))
+    print("Employee {} is done with tasks({}/{}):".format(
+        name, d_tasks, t_tasks))
 
-for task in task_titles:
-    print("\t {}".format(task))
+    for task in task_titles:
+        print("\t {}".format(task))
