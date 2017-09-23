@@ -1,2 +1,3 @@
 #!/usr/bin/env bash
-sudo ufw disable
+#fixing port issues
+sudo ufw allow 0:8080
